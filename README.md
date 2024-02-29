@@ -36,6 +36,7 @@
 ![图片8](https://github.com/limiiii/yandiansai_finals-master/assets/105148297/73ce2d9c-3c0b-4d28-84d8-1edfc51e79e0)
 ### 前端
 ![前端](https://github.com/limiiii/yandiansai_finals-master/assets/105148297/84485f93-7e25-4713-b617-99cd8586bee3)  
-## Thanks for watching
+## Thanks for watching!
+# Contact
+827174935@qq.com
 
-# Copyright **** All Rights Reserved

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/urdbess/explore_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/urdbess/explore_ws/src/explore/include/**",
+        "/home/urdbess/explore_ws/src/lane_traffic_detect/include/**",
+        "/home/urdbess/explore_ws/src/path_plan/include/**",
+        "/home/urdbess/explore_ws/src/record_goals/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

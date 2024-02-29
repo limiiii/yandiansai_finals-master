@@ -1,0 +1,5 @@
+<launch>
+    <param name="/record_file" value="$(find modify_params)/modify_poses.txt"/>
+    <node name="set_poses_node" pkg="record_goals" type="set_poses"  output="screen"/>
+
+</launch>

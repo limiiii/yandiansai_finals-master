@@ -1,0 +1,11 @@
+<launch>
+    <!-- 启动机器人 -->
+    <include file="$(find arebot_bringup)/launch/arebot.launch" />
+    <!-- 启动摄像头 -->
+    <include file="$(find ncnn_ros)/launch/camera.launch" />
+    <!-- 启动mqtt监听节点 -->
+    <node pkg="mqtt_robot_service" type="sub_status.py" name="sub_status_node" output="screen"/>
+    <!-- 启动功能服务节点 -->
+    <node pkg="mqtt_robot_service" type="servers.py" name="servers_node" output="screen"/>
+
+</launch>

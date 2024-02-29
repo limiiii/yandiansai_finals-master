@@ -1,0 +1,5 @@
+<launch>
+    <param name="/record_file" value="$(find record_goals)/goal_rooms.txt"/>
+    <node name="set_rooms_node" pkg="record_goals" type="set_rooms"  output="screen"/>
+
+</launch>

@@ -1,0 +1,24 @@
+<launch>
+
+  <arg name="display_output" default="true"/>
+  <arg name="enable_gpu" default="false"/>
+  <arg name="powersave" default= "0"/>
+  <arg name="thread" default= "2"/>
+  <arg name="target_size" default= "550"/>
+  <arg name="camera_topic" default="/usb_cam/image_raw"/>
+
+  <node name="yolact_node" pkg="ncnn_ros" type="yolact_node" output="screen">
+    <param name="models_path" value="/home/bingda/ncnn-assets/models/"/>
+    <param name="model_file" value="yolact.bin"/>
+    <param name="param_file" value="yolact.param"/>
+    <param name="display_output" value="$(arg display_output)"/>
+    <param name="enable_gpu" value="$(arg enable_gpu)"/>
+    <!-- powersave可以设置为0或者1或者2,其中0代表使用所有的cpu核,1代表只使用little cores,2代表只使用big cores-->
+    <param name="powersave" value="$(arg powersave)"/>   
+    <param name="thread" value="$(arg thread)"/>   
+    <param name="target_size" value="550"/>
+    <param name="prob_threshold" value="0.35"/>
+    <remap from="/camera/image_raw" to="$(arg camera_topic)"/>
+  </node>
+
+</launch>
